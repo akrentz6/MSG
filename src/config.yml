@@ -1,0 +1,63 @@
+mysql:
+  use-mysql: false
+  host: "localhost"
+  port: 1111
+  database: "database"
+  username: "username"
+  password: "password"
+
+messages:
+  
+  nopermission:
+    - "&4You don't have permissions to do that!"
+  playersOnly:
+    - "&4Only players can run that command!"
+  cannotMessage:
+    - "&cYou can't message that player!"
+  sent:
+    - "&7[&aTO&7] [&a%receiver%&7] >> &f%message%"
+  received:
+    - "&7[&aFROM&7] [&a%sender%&7] >> &f%message%"
+  socialspyMessage:
+    - "&7[&aFROM&7] [&a%sender%&7] [&aTO&7] [&a%receiver%&7] >> &f%message%"
+  
+  message:
+    usage:
+      - "&cUsage: /message {player} {message}"
+    offline:
+      - "&cThat player is offline!"
+  
+  reply:
+    usage:
+      - "&cUsage: /reply {message}"
+    noreplies:
+      - "&cYou have no one to reply to!"
+    offline:
+      - "&cThat player is offline!"
+  
+  ignore:
+    usage:
+      - "&cUsage: /ignore add {player}"
+      - "&cUsage: /ignore remove {player}"
+    doesntExist:
+      - "&cThat player doesn't exist!"
+    notIgnored:
+      - "&cYou are not ignoring that player!"
+    alreadyIgnored:
+      - "&cYou are already ignoring that player!"
+    added:
+      - "&aYou added %player% to your ignored players."
+    removed:
+      - "&aYou removed %player% from your ignored players."
+  
+  donotdisturb:
+    enabled:
+      - "&aYou enabled do not disturb."
+    disabled:
+      - "&cYou disabled do not disturb."
+  
+  socialspy:
+    enabled:
+      - "&aYou enabled social spy."
+    disabled:
+      - "&cYou disabled social spy."

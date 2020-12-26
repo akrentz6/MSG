@@ -1,0 +1,42 @@
+main: me.scruffyboy13.MSG.MSG
+name: MSG
+version: 1.5
+author: scruffyboy13
+
+commands:
+  message:
+    aliases: [msg, pm, m]
+    description: Privately message other players.
+    usage: /msg {player} {message}
+  reply:
+    aliases: [r]
+    description: Reply to other players' messages.
+    usage: /reply {message}
+  donotdisturb:
+    aliases: [dnd]
+    description: Stop all players from messaging you.
+    usage: /donotdisturb
+  ignore:
+    description: Stop certain players from messaging you
+    usage: /ignore {player}
+  socialspy:
+    aliases: [ss]
+    description: See players' private messages.
+    usage: /socialspy
+
+permissions:
+  msg.message:
+    description: Allows message command.
+    default: true
+  msg.reply:
+    description: Allows reply command.
+    default: true
+  msg.donotdisturb:
+    description: Allows donotdisturb command.
+    default: true
+  msg.ignore:
+    description: Allows ignore command.
+    default: true
+  msg.socialspy:
+    description: Allows socialspy command.
+    default: op
