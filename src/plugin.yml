@@ -1,11 +1,11 @@
 main: me.scruffyboy13.MSG.MSG
 name: MSG
-version: 1.5
+version: 1.5.1
 author: scruffyboy13
 
 commands:
   message:
-    aliases: [msg, pm, m]
+    aliases: [msg, pm, m, tell, t, whisper, w]
     description: Privately message other players.
     usage: /msg {player} {message}
   reply:
