@@ -59,7 +59,7 @@ public class FileUtils {
 		Map<UUID, Boolean> socialspy = new HashMap<UUID, Boolean>();
 		FileConfiguration config = MSG.getData().getConfig();
 		for (String uuid : config.getConfigurationSection("data").getKeys(false)) {
-			socialspy.put(UUID.fromString(uuid), config.getBoolean("data." + uuid + ".DoNotDisturb"));
+			socialspy.put(UUID.fromString(uuid), config.getBoolean("data." + uuid + ".SocialSpy"));
 		}
 		return socialspy;
 	}
